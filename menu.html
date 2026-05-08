@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お品書き｜幻庵（岩見沢・石臼粗挽き手打そば）</title>
+  <meta name="description" content="幻庵のお品書き。冷たいそば・温かいそば・セットメニュー。全席禁煙・予約可。">
+  <!-- OGP: TODO ドメイン確定後にURLを更新、OGP画像(1200x630)を用意 -->
+  <meta property="og:title" content="お品書き｜幻庵">
+  <meta property="og:description" content="幻庵のお品書き。冷たいそば・温かいそば・セットメニュー。全席禁煙・予約可。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/menu.html">
+  <meta property="og:image" content="https://example.com/images/ogp.jpg">
+  <meta property="og:site_name" content="石臼粗挽き 手打そば 幻庵">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a href="index.html" class="site-logo" aria-label="幻庵 ホーム">
+        <span class="site-logo__title">幻庵</span>
+        <small class="site-logo__sub">石臼粗挽き 手打そば</small>
+      </a>
+      <nav class="site-nav" aria-label="グローバルナビゲーション">
+        <a href="index.html">HOME</a>
+        <a href="menu.html" class="is-active">お品書き</a>
+        <a href="access.html">アクセス</a>
+        <a href="info.html">店舗情報</a>
+      </nav>
+      <div class="site-header__actions">
+        <a href="tel:0126-22-6171" class="header-tel">0126-22-6171</a>
+        <button type="button" class="hamburger" id="hamburgerBtn" aria-label="メニューを開閉" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="モバイルメニュー" aria-hidden="true">
+      <div class="mobile-menu__inner container">
+        <a href="index.html" class="mobile-menu__link">HOME</a>
+        <a href="menu.html" class="mobile-menu__link is-active">お品書き</a>
+        <a href="access.html" class="mobile-menu__link">アクセス</a>
+        <a href="info.html" class="mobile-menu__link">店舗情報</a>
+        <a href="tel:0126-22-6171" class="btn btn--primary btn--full">0126-22-6171</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 内部ページ共通ヒーロー -->
+    <div class="page-hero">
+      <h1 class="page-hero__title">お品書き</h1>
+      <p class="page-hero__en">MENU</p>
+    </div>
+
+    <!-- メニュー一覧 -->
+    <section class="section">
+      <div class="container container--narrow">
+        <!-- TODO: 品目と価格はヒアリング後に差し替え -->
+        <div class="menu-category">
+          <div class="menu-category__header">
+            <h2 class="menu-category__title">冷たいそば</h2>
+            <div class="menu-category__rule"></div>
+          </div>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <div class="menu-item__name">もりそば<span class="menu-item__name-sub">石臼粗挽きそばの定番品</span></div>
+              <span class="menu-item__price">¥○,○○○<span class="unit">（税込）</span></span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item__name">ざるそば<span class="menu-item__name-sub">のど越しよく味わう冷たいそば</span></div>
+              <span class="menu-item__price">¥○,○○○<span class="unit">（税込）</span></span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item__name">（品名：要確認）<span class="menu-item__name-sub">内容はヒアリング後に更新</span></div>
+              <span class="menu-item__price">¥○,○○○<span class="unit">（税込）</span></span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item__name">（品名：要確認）<span class="menu-item__name-sub">内容はヒアリング後に更新</span></div>
+              <span class="menu-item__price">¥○,○○○<span class="unit">（税込）</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-category">
+          <div class="menu-category__header">
+            <h2 class="menu-category__title">温かいそば</h2>
+            <div class="menu-category__rule"></div>
+          </div>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <div class="menu-item__name">かけそば<span class="menu-item__name-sub">出汁の香りを楽しめる温かい一杯</span></div>
+              <span class="menu-item__price">¥○,○○○<span class="unit">（税込）</span></span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item__name">天ぷらそば<span class="menu-item__name-sub">人気の定番温そば</span></div>
+              <span class="menu-item__price">¥○,○○○<span class="unit">（税込）</span></span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item__name">山菜そば<span class="menu-item__name-sub">やさしい味わいの一杯</span></div>
+              <span class="menu-item__price">¥○,○○○<span class="unit">（税込）</span></span>
+            </li>
+            <li class="menu-item">
+              <div class="menu-item__name">（品名：要確認）<span class="menu-item__name-sub">内容はヒアリング後に更新</span></div>
+              <span class="menu-item__price">¥○,○○○<span class="unit">（税込）</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-category">
+          <div class="menu-category__header">
+            <h2 class="menu-category__title">セット・その他</h2>
+            <div class="menu-category__rule"></div>
+          </div>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <div class="menu-item__name">そば＋ミニ丼セット（要確認）<span class="menu-item__name-sub">組み合わせ内容はヒアリング後に更新</span></div>
+              <span class="menu-item__price">¥○,○○○<span class="unit">（税込）</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-category">
+          <div class="menu-category__header">
+            <h2 class="menu-category__title">季節・限定</h2>
+            <div class="menu-category__rule"></div>
+          </div>
+          <div class="menu-limited">
+            <span class="menu-limited__label">季節のおすすめは随時更新</span>
+            <p class="menu-limited__text">最新の季節メニュー・限定品は Instagram でご確認ください。</p>
+          </div>
+        </div>
+
+        <div class="note-box">
+          <p>全席禁煙</p>
+          <p>ご予約はお電話にて　<a href="tel:0126-22-6171">0126-22-6171</a></p>
+          <p>大盛り：○○円増し（要確認）</p>
+          <p>テイクアウト：可否は要確認。詳しくはお電話でお問い合わせください。</p>
+          <p>アレルギーをお持ちのお客様はお気軽にご相談ください。</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-bar">
+      <div class="cta-bar__inner">
+        <p class="cta-bar__title">ご来店をお待ちしています</p>
+        <p class="cta-bar__sub">ご予約・お問い合わせはお電話にて承ります</p>
+        <div class="cta-bar__btns">
+          <a href="tel:0126-22-6171" class="btn btn--white btn--lg">電話する</a>
+          <a href="access.html" class="btn btn--outline-white btn--lg">アクセスを見る</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__name">石臼粗挽き　手打そば　幻庵</p>
+      <div class="site-footer__info">
+        <!-- TODO: 営業時間・定休日は確定後に差し替え -->
+        <p>〒068-0024　北海道岩見沢市かえで町4-6-7</p>
+        <p><a href="tel:0126-22-6171">0126-22-6171</a></p>
+        <p>【4〜11月】昼 ○○:○○〜○○:○○ ／ 夜 ○○:○○〜○○:○○</p>
+        <p>【12〜3月】昼 ○○:○○〜○○:○○ ／ 夜 ○○:○○〜○○:○○</p>
+        <p>定休日：水曜夜・日曜・毎月最終週月曜・祝日翌日（祝日は通常営業）※要確認</p>
+      </div>
+      <div class="site-footer__notice">
+        最新の営業情報・臨時休業はInstagramまたはお電話でご確認ください
+      </div>
+      <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+        <a href="index.html">HOME</a>
+        <a href="menu.html">お品書き</a>
+        <a href="access.html">アクセス</a>
+        <a href="info.html">店舗情報</a>
+      </nav>
+      <p class="site-footer__copy">&copy; 2026 石臼粗挽き 手打そば 幻庵</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
