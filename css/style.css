@@ -1209,3 +1209,32 @@ main {
     height: 460px;
   }
 }
+
+@media (max-width: 1023px) {
+  /* スマホ・タブレットでは横並びナビを隠し、ドロワーメニューに集約 */
+  .site-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 639px) {
+  /* スマホでは電話番号もドロワー側へ寄せて、ヘッダーの重なりを防止 */
+  .header-tel {
+    display: none;
+  }
+
+  .site-header__inner {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-nav {
+    display: flex;
+    gap: 18px;
+  }
+
+  .header-tel {
+    display: inline-flex;
+  }
+}
