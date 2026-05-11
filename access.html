@@ -3,36 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>アクセス｜幻庵（岩見沢・石臼粗挽き手打そば）</title>
-  <meta name="description" content="幻庵へのアクセス。住所：北海道岩見沢市かえで町4-6-7。バス停「かえで団地入口」徒歩約2分。駐車場あり。">
-  <!-- OGP: TODO ドメイン確定後にURLを更新、OGP画像(1200x630)を用意 -->
-  <meta property="og:title" content="アクセス｜幻庵">
-  <meta property="og:description" content="幻庵へのアクセス。住所：北海道岩見沢市かえで町4-6-7。バス停「かえで団地入口」徒歩約2分。駐車場あり。">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://example.com/access.html">
-  <meta property="og:image" content="https://example.com/images/ogp.jpg">
-  <meta property="og:site_name" content="石臼粗挽き 手打そば 幻庵">
-  <meta name="twitter:card" content="summary_large_image">
+  <title>アクセス｜石臼粗挽き 手打そば 幻庵</title>
+  <meta name="description" content="石臼粗挽き 手打そば 幻庵へのアクセス情報。住所、電話番号、バス停、駐車場、支払い方法をご案内します。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="site-header__inner container">
-      <a href="index.html" class="site-logo" aria-label="幻庵 ホーム">
-        <span class="site-logo__title">幻庵</span>
-        <small class="site-logo__sub">石臼粗挽き 手打そば</small>
-      </a>
-      <nav class="site-nav" aria-label="グローバルナビゲーション">
+  <header class="hdr">
+    <div class="hdr-in container">
+      <a href="index.html" class="logo">幻庵<small>石臼粗挽き 手打そば</small></a>
+      <nav class="nav" aria-label="グローバルナビゲーション">
         <a href="index.html">HOME</a>
         <a href="menu.html">お品書き</a>
-        <a href="access.html" class="is-active">アクセス</a>
+        <a href="access.html" class="on">アクセス</a>
         <a href="info.html">店舗情報</a>
       </nav>
-      <div class="site-header__actions">
-        <a href="tel:0126-22-6171" class="header-tel">0126-22-6171</a>
+      <div class="hdr-actions">
+        <a href="tel:0126-22-6171" class="hdr-tel">0126-22-6171</a>
         <button type="button" class="hamburger" id="hamburgerBtn" aria-label="メニューを開閉" aria-expanded="false" aria-controls="mobileMenu">
           <span></span>
           <span></span>
@@ -44,136 +33,74 @@
       <div class="mobile-menu__inner container">
         <a href="index.html" class="mobile-menu__link">HOME</a>
         <a href="menu.html" class="mobile-menu__link">お品書き</a>
-        <a href="access.html" class="mobile-menu__link is-active">アクセス</a>
+        <a href="access.html" class="mobile-menu__link on">アクセス</a>
         <a href="info.html" class="mobile-menu__link">店舗情報</a>
-        <a href="tel:0126-22-6171" class="btn btn--primary btn--full">0126-22-6171</a>
+        <a href="tel:0126-22-6171" class="btn btn-p btn-full">電話する</a>
       </div>
     </nav>
   </header>
 
   <main>
     <div class="page-hero">
-      <h1 class="page-hero__title">アクセス</h1>
-      <p class="page-hero__en">ACCESS</p>
+      <h1 class="page-hero-title">アクセス</h1>
+      <p class="page-hero-en">ACCESS</p>
     </div>
 
-    <!-- Googleマップ案内エリア -->
-    <div class="map-area">
-      <iframe
-        src="https://maps.google.com/maps?q=%E5%8C%97%E6%B5%B7%E9%81%93%E5%B2%A9%E8%A6%8B%E6%B2%A2%E5%B8%82%E3%81%8B%E3%81%88%E3%81%A7%E7%94%BA4-6-7&t=&z=16&ie=UTF8&iwloc=&output=embed"
-        title="幻庵の所在地マップ"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="map-live">
+      <iframe src="https://maps.google.com/maps?q=%E5%8C%97%E6%B5%B7%E9%81%93%E5%B2%A9%E8%A6%8B%E6%B2%A2%E5%B8%82%E3%81%8B%E3%81%88%E3%81%A7%E7%94%BA4-6-7&t=&z=16&ie=UTF8&iwloc=&output=embed" title="石臼粗挽き 手打そば 幻庵の周辺地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-    <!-- アクセス詳細ブロック -->
-    <section class="section">
-      <div class="container container--narrow">
-        <div class="access-block">
-          <div class="access-block__heading">住所・電話番号</div>
-          <div class="access-block__body">
-            <p>〒068-0024　北海道岩見沢市かえで町4-6-7</p>
-            <p><a href="tel:0126-22-6171">0126-22-6171</a></p>
-            <a href="https://maps.app.goo.gl/ch3YZuzkABbox61Y8" class="btn btn--primary" target="_blank" rel="noopener">Googleマップで開く</a>
+    <section class="sec">
+      <div class="container container--compact">
+        <div class="ac-block">
+          <div class="ac-block-hdr">住所・電話番号</div>
+          <div class="ac-block-body">
+            <p>〒068-0829　北海道岩見沢市かえで町4-6-7</p>
+            <p style="margin-top:6px"><a href="tel:0126-22-6171">0126-22-6171</a></p>
+            <p style="margin-top:14px"><a href="https://maps.app.goo.gl/ch3YZuzkABbox61Y8" class="btn btn-p btn-sm" target="_blank" rel="noopener">Googleマップで開く</a></p>
           </div>
         </div>
-        <div class="access-block">
-          <div class="access-block__heading">お車でお越しの方（駐車場）</div>
-          <div class="access-block__body">
-            <p>駐車場：あり（無料）</p>
-            <p>台数：○台（要確認）</p>
-            <span class="note">※ 駐車位置や詳細はヒアリング後に更新してください。</span>
-          </div>
+        <div class="ac-block">
+          <div class="ac-block-hdr">お車でお越しの方（駐車場）</div>
+          <div class="ac-block-body"><p>駐車場：あり（無料・6台）</p></div>
         </div>
-        <div class="access-block">
-          <div class="access-block__heading">バスでお越しの方</div>
-          <div class="access-block__body">
-            <p>バス停「かえで団地入口」より徒歩約2分</p>
-            <p>路線名：要確認</p>
-            <span class="note">※ 系統番号・運行会社はヒアリング後に更新してください。</span>
-          </div>
+        <div class="ac-block">
+          <div class="ac-block-hdr">バスでお越しの方</div>
+          <div class="ac-block-body"><p>バス停「かえで団地入口」より<strong>徒歩約2分</strong></p></div>
         </div>
       </div>
     </section>
 
-    <!-- 外観写真エリア -->
-    <section class="section section--alt">
-      <div class="container">
-        <h2 class="section-title">外観のご案内</h2>
-        <p class="section-subtitle">はじめてのご来店前にご確認ください</p>
-        <div class="section-divider"></div>
-        <div class="photo-area">
-          <span>外観写真 準備中</span>
-          <span>exterior.jpg</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- 来店ガイド -->
-    <section class="section">
-      <div class="container container--narrow">
-        <h2 class="section-title">来店ガイド</h2>
-        <p class="section-subtitle">到着までの目安をご案内します</p>
-        <div class="section-divider"></div>
-        <div class="guide-list">
-          <div class="guide-item">
-            <div class="guide-num">1</div>
-            <div>
-              <p class="guide-title">バスでお越しの場合</p>
-              <p class="guide-text">「かえで団地入口」停を降り、徒歩約2分で到着します。</p>
-            </div>
-          </div>
-          <div class="guide-item">
-            <div class="guide-num">2</div>
-            <div>
-              <p class="guide-title">お車でお越しの場合</p>
-              <p class="guide-text">駐車場をご利用ください。詳細な位置や台数はヒアリング後に追記してください。</p>
-            </div>
-          </div>
-          <div class="guide-item">
-            <div class="guide-num">3</div>
-            <div>
-              <p class="guide-title">場所が分からない場合</p>
-              <p class="guide-text">お電話いただければ丁寧にご案内します。<a href="tel:0126-22-6171">0126-22-6171</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="cta-bar">
-      <div class="cta-bar__inner">
-        <p class="cta-bar__title">ご来店をお待ちしています</p>
-        <p class="cta-bar__sub">ご予約・お問い合わせはお電話にて承ります</p>
+    <section class="cta-bar">
+      <div class="container container--compact">
+        <p class="cta-bar__title">場所が分からない場合はお気軽にどうぞ</p>
+        <p class="cta-bar__sub">電話でも道案内いたします</p>
         <div class="cta-bar__btns">
-          <a href="tel:0126-22-6171" class="btn btn--white btn--lg">電話する</a>
-          <a href="access.html" class="btn btn--outline-white btn--lg">アクセスを見る</a>
+          <a href="tel:0126-22-6171" class="btn btn-w">電話する</a>
+          <a href="menu.html" class="btn btn-ow">お品書きを見る</a>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="site-footer__inner">
-      <p class="site-footer__name">石臼粗挽き　手打そば　幻庵</p>
-      <div class="site-footer__info">
-        <!-- TODO: 営業時間・定休日は確定後に差し替え -->
-        <p>〒068-0024　北海道岩見沢市かえで町4-6-7</p>
-        <p><a href="tel:0126-22-6171">0126-22-6171</a></p>
-        <p>【4〜11月】昼 ○○:○○〜○○:○○ ／ 夜 ○○:○○〜○○:○○</p>
-        <p>【12〜3月】昼 ○○:○○〜○○:○○ ／ 夜 ○○:○○〜○○:○○</p>
-        <p>定休日：水曜夜・日曜・毎月最終週月曜・祝日翌日（祝日は通常営業）※要確認</p>
+  <footer class="ftr">
+    <div class="container">
+      <p class="ftr-name">石臼粗挽き&ensp;手打そば&ensp;幻庵</p>
+      <div class="ftr-info">
+        <p>〒068-0829&ensp;北海道岩見沢市かえで町4-6-7</p>
+        <p>Tel : 0126-22-6171</p>
+        <p>営業時間&emsp;11:00 〜 19:00（中休み 15:00〜17:00）</p>
+        <p>定休日&emsp;&emsp;日曜日・水曜夜・毎月最終週月曜</p>
+        <small>※ 最終週月曜が祝日の場合は営業し、翌日が休みとなります</small>
       </div>
-      <div class="site-footer__notice">
-        最新の営業情報・臨時休業はInstagramまたはお電話でご確認ください
-      </div>
-      <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+      <div class="ftr-notice">天候や諸事情により臨時休業となる場合がございます。営業のご確認はお電話にてお願いいたします。</div>
+      <nav class="ftr-nav" aria-label="フッターナビゲーション">
         <a href="index.html">HOME</a>
         <a href="menu.html">お品書き</a>
         <a href="access.html">アクセス</a>
         <a href="info.html">店舗情報</a>
       </nav>
-      <p class="site-footer__copy">&copy; 2026 石臼粗挽き 手打そば 幻庵</p>
+      <p class="ftr-copy">&copy; 2026 石臼粗挽き 手打そば 幻庵</p>
     </div>
   </footer>
 

@@ -2,12 +2,7 @@
 
 /**
  * js/script.js
- * 機能：
- *   1. ハンバーガーメニューの開閉
- *   2. ヘッダー外クリックでメニューを閉じる
- *   3. ドロワーリンクをタップしたらメニューを閉じる
- *
- * ※ スムーススクロールは CSS の scroll-behavior: smooth で対応
+ * モバイル用ハンバーガーメニューの開閉を制御します。
  */
 document.addEventListener('DOMContentLoaded', function () {
   var hamburger = document.getElementById('hamburgerBtn');
