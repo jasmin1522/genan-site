@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   document.addEventListener('click', function (event) {
-    if (!event.target.closest('.site-header') && mobileMenu.classList.contains('is-open')) {
+    if (!event.target.closest('.hdr') && mobileMenu.classList.contains('is-open')) {
       closeMenu();
     }
   });
